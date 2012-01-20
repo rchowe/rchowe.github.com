@@ -7,7 +7,20 @@
 	
 	<body>
 		<div id = "content">
-			Hi
+			<h1>RC Howe</h1>
+			<p>Hi! My name is RC Howe. I'm an undergraduate student at <a href = "http://www.uvm.edu">the University of Vermont</a> studying biochemistry and computer science. I have a few interesting things on my <a href = "https://www.github.com/rchowe">GitHub page</a>, among them being <a href = "https://gist.github.com/1648287">a jquery plugin to create elements in jquery using selectors</a></p>
+			
+			<pre><span style = "color: #013; font-weight: bold;">$</span>(document.body).
+    <span style = "color: #013; font-weight: bold;">create</span>( <span style = "color: #c00">'#content.box'</span> ).
+    <span style = "color: #013; font-weight: bold;">html</span>( <span style = "color: #c00">'hi'</span> );</pre>
+		
+		and it gets more interesting in coffeescript where you can do stuff like this
+		<pre><span style = "color: #013; font-weight: bold;">$</span>(document.body).
+    <span style = "color: #013; font-weight: bold;">create</span>( <span style = "color: #c00">'#content.box'</span> ).
+    <span style = "color: #013; font-weight: bold;">html</span>( <span style = "color: #c00">'hi'</span> ).
+    <span style = "color: #013; font-weight: bold;">css</span>
+        <span style = "color: #c00">'line-height'</span>: <span style = "color: #c00">'1.3em'</span>
+        <span style = "color: #c00">'color'</span>: <span style = "color: #c00">'blue'</span></pre>
 		</div>
 	</body>
 </html>

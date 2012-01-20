@@ -1,13 +1,62 @@
 
 body
 {
-	font-family: Helvetica, 'DejaVu Sans', sans-serif;
+	font: 14px Helvetica, Arial, Freesans, Clean, sans-serif;
+	margin: 0px;
 }
 
-#content
+header
+{
+	font-size: 120%;
+	color: #a00;
+	padding: 10px 5px;
+	font-weight: bold;
+	margin: 10px 0px;
+}
+
+header .inner, #content
 {
 	max-width: 800px;
 	
 	margin-left:  auto;
 	margin-right: auto;
+}
+
+h1, h2, h3
+{
+	color: #a00;
+}
+
+#content
+{
+	line-height: 1.7em;
+}
+
+a:link
+{
+	color: #a00;
+	text-decoration: none;
+}
+
+a:link:hover
+{
+	text-decoration: underline;
+}
+
+a:visited
+{
+	color: #600;
+}
+
+pre
+{
+	border: #eee 1px solid;
+	background: #f7f7f7;
+	padding: 5px;
+	
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	
+	font-family: 'DejaVu Sans Mono', Menlo, monospace;
 }
