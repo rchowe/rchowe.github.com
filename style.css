@@ -22,9 +22,14 @@ header .inner, #content
 	margin-right: auto;
 }
 
-h1, h2, h3
+h1
 {
 	color: #a00;
+}
+
+h2
+{
+	border-bottom: #ccc 1px solid;
 }
 
 #content
@@ -59,4 +64,15 @@ pre
 	border-radius: 3px;
 	
 	font-family: 'DejaVu Sans Mono', Menlo, monospace;
+}
+
+table.classes td
+{
+	padding: 0px 5px;
+}
+
+table.classes .symbol
+{
+	font-family: 'DejaVu Sans Mono', Menlo, monospace;
+	font-weight: bold;
 }
