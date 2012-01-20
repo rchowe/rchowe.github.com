@@ -1,0 +1,13 @@
+
+body
+{
+	font-family: Helvetica, 'DejaVu Sans', sans-serif;
+}
+
+#content
+{
+	max-width: 800px;
+	
+	margin-left:  auto;
+	margin-right: auto;
+}
