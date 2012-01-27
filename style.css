@@ -5,6 +5,13 @@ body
 	margin: 0px;
 }
 
+@media print
+{
+	body {
+		font-size: 12px;
+	}
+}
+
 header
 {
 	font-size: 120%;
@@ -75,4 +82,24 @@ table.classes .symbol
 {
 	font-family: 'DejaVu Sans Mono', Menlo, monospace;
 	font-weight: bold;
+}
+
+dl dt.title
+{
+	font-weight: bold;
+}
+
+dl dt.date
+{
+	float: right;
+	font-style: italic;
+}
+
+dd
+{
+	margin-bottom: 10px;
+}
+
+#information
+{
 }
