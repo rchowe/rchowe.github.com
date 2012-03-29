@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+	<head>
+		<title>CS 195 Presentation Script</title>
+		<link rel = "stylesheet" type = "text/css" href = "style.css" />
+	</head>
+
+	<body>
+	<div id = "content">
+<h2>Introduction</h2>
+
+<pre><code>require 'presentation'
+
+about_me
+</code></pre>
+
+<p>I am going to talk about magic in computer science. Magic is...</p>
+
+<p>This is IRB. It is a command-line Read-Execute-Print loop for ruby, which basically means it reads a line of ruby, runs it, and then spits the result back out.</p>
+
+<p>Ruby is a programming language very similar to python.</p>
+
+<p>It does simple math</p>
+
+<pre><code>2 + 3
+49 / 7 + 2
+</code></pre>
+
+<p>Call a function by typing its name. Parentheses are not required.</p>
+
+<pre><code>puts 'Hello, world!'
+puts( 'Hello, world!' )
+</code></pre>
+
+<p>You can do some interesting one-liners:</p>
+
+<pre><code>5.times { puts 'Hey, listen!'; sleep 1 }
+</code></pre>
+
+<h2>Demo - Sinatra</h2>
+
+<pre><code>clear and require 'sinatra'
+
+get '/hello' do
+    'Hello, world!'
+end 
+
+Sinatra::Application.run!
+</code></pre>
+
+<p><em>Open a browser and navigate to <code>http://localhost:4567/hello</code>. <code>^C</code> when finished</em>.</p>
+
+<pre><code>get '/greet/:name' do |name|
+    'Hello, ' + name + '!'
+end
+
+Sinatra::Application.run!
+</code></pre>
+
+<p><em>Open a browser and navigate to <code>http://localhost:4567/greet/RC</code>. <code>^C</code> when finished</em>.</p>
+
+<p>Note that it is really easy to define routes - I am just showing you get because it is easy, but you can also play with request and response properties, use post, put, delete -- it is really easy to build a RESTful API with this.</p>
+
+<h2>DataMapper</h2>
+
+<p>DataMapper is another kind of API that is magical. Let me show you an example.</p>
+
+<pre><code>clear 
+
+class Person
+    include DataMapper::Resource
+
+    property :name, String, :key =&gt; true
+    property :favorite_language, String
+end
+
+DataMapper.finalize
+DataMapper.auto_migrate!
+</code></pre>
+
+<p><em>Explain SQL</em></p>
+</div>
+</body>
+</html>
