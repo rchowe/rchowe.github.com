@@ -21,7 +21,7 @@ header h1
 	margin: 10px 0px;
 }
 
-header .inner, header #information .inner, #content
+header .inner, header #information .inner, #content, footer .inner
 {
 	max-width: 800px;
 	
@@ -45,6 +45,17 @@ header h1
 {
 	color: white;
 }
+
+footer
+{
+	display: block;
+}
+
+footer .inner
+{
+	padding: 20px 5px;
+}
+
 
 h2
 {
@@ -121,6 +132,30 @@ dd
 
 #information
 {
+}
+
+footer .key, footer a.key
+{
+	display: block;
+	text-align: center;
+	color: #ccc;
+	letter-spacing: 2px;
+	font-weight: bold;
+	-webkit-transition: ease 1s all
+}
+
+footer a.key:hover
+{
+	color: #0af;
+	text-decoration: none;
+}
+
+#content .key
+{
+	font-family: monospace;
+	background: #f7f7f7;
+	border: #eee 1px solid;
+	padding: 2px;
 }
 
 @media print
