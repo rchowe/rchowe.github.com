@@ -1,35 +1,30 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>RC Howe</title>
-		<link rel = "stylesheet" type = "text/css" href = "style.css">
+		<title>Test Page</title>
+		<link href='http://fonts.googleapis.com/css?family=Muli:300,400,300italic,400italic' rel='stylesheet' type='text/css'>
+		<link rel = "stylesheet" type = "text/css" href = "style.css" />
 	</head>
 	
 	<body>
 		<header>
-			<div class = "inner">
-				<h1>RC Howe</h1>
-			</div>
-				<div id = "information">
-					<div class = "inner">
-						<div><a href = "mailto:rc@rchowe.com">rc@rchowe.com</a></div>
-						<div><a href = "tel:15083141715">+1 (508) 314-1715</a></div>
-						<div>
-							27 Birch Hill Road<br />
-							Stow, MA, 01775
-						</div>
-					</div>
-				</div>
+			<h1>RC Howe</h1>
 		</header>
-		
-		<div id = "content">
+	
+		<div id = "content" class = "resume">
+
+			<div>Robert Howe<br />
+				27 Birch Hill Road<br />
+				Stow, MA, 01775<br />
+				<a href = "tel:5083141715">+1 (508) 314-1715</a>
+			</div>
 
 			<h2>Profile</h2>
 			<p>I am a college student at the <a href = "https://www.uvm.edu">University of Vermont</a>, studying Biochemistry and Computer Science. To see some projects I have worked on, visit my GitHub page (<a href = "https://www.github.com/rchowe">https://www.github.com/rchowe</a>).</p>
 
 			<h2>Experience</h2>
 
-			<dl>
+			<dl class = "experience">
 				<dt class = "date">2012</dt>
 				<dt class = "title"><em>Knome, Inc</em></dt>
 				<dt class = "subtitle">Intern, Competitive Analysis. Cambridge, MA</dt>
@@ -47,20 +42,33 @@
 			</dl>
 
 			<h2>Skills</h2>
-			<h3>Programming Languages</h3>
-			<p>(<i>Alphabetical Order</i>) C, C++, C#, CoffeeScript, Haskell, Java, JavaScript, Python, Ruby</p>
+			<div class = "skills">
+				<table>
+					<tr>
+				<td>
+					<h3>Programming Languages</h3>
+					<p>C, C++, C#, CoffeeScript, Haskell, Java, JavaScript, Python, Ruby</p>
+				</td>
 
-			<h3>Technologies</h3>
-			<p>(<i>Alphabetical Order</i>) AJAX, CSS, DataMapper, iOS, JSON, REST, Ruby on Rails, Sinatra, SQL (T-SQL, MySQL, Postgres), XML</p>
+				<td>
+					<h3>Technologies</h3>
+					<p>AJAX, CSS, DataMapper, iOS, JSON, REST, Ruby on Rails, Sinatra, SQL (T-SQL, MySQL, Postgres), XML</p>
+				</td>
+				
+				<td>
+					<h3>Operating Systems</h3>
+					<p>Linux (Primarily Ubuntu), Mac OS X, Windows 7</p>
+				</td>
 
-			<h3>Operating Systems</h3>
-			<p>Linux (Primarily Ubuntu), Mac OS X, Windows 7</p>
-
-			<h3>Miscellaneous</h3>
-			<p>CPR Certified &mdash; Professional Rescuer (American Heart Association)</p>			
+				<td>
+					<h3>Miscellaneous</h3>
+					<p>CPR Certified &mdash; Professional Rescuer</p>
+				</td>
+			</tr></table>
+			</div>
 
 			<h2>Education</h2>
-			<dl>
+			<dl class = "education">
 				<dt class = "date">Expected 2015</dt>
 				<dt>University of Vermont &mdash; <i>College of Arts and Sciences</i></dt>
 				<dd><b>Bachelor of Science</b>, Major in Biochemistry.</dd>
@@ -73,5 +81,24 @@
 				<dt>Nashoba Regional High School</dt>
 				<dd><b>High School Diploma</b>.</dd>
 		</div>
+
+		<footer>
+			<div class = "column">
+				<h2>Myself</h2>
+				<ul>
+					<li><a href = "/courses.html">Courses</a></li>
+					<li><a href = "http://www.twitter.com/rchowe">Twitter</a></li>
+					<li><a href = "/key.html">GPG Key</a></li>
+				</ul>
+			</div>
+			
+			<div class = "column">
+				<h2>My Work</h2>
+				<ul>
+					<li><a href = "/resume.html">R&eacute;sum&eacute;</a></li>
+					<li><a href = "https://www.github.com/rchowe">GitHub</a></li>
+				</ul>
+			</div>
+		</footer>
 	</body>
 </html>
