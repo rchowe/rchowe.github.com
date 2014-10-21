@@ -1,0 +1,83 @@
+==================================================================
+https://keybase.io/rchowe
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://rchowe.com
+  * I am rchowe (https://keybase.io/rchowe) on keybase.
+  * I have a public key with fingerprint 4035 6EF9 A5C7 B19B BA6B  A139 320F C984 0C5F 311A
+
+To claim this, I am signing this object:
+
+{
+    "body": {
+        "client": {
+            "name": "keybase.io node.js client",
+            "version": "0.7.2"
+        },
+        "key": {
+            "fingerprint": "40356ef9a5c7b19bba6ba139320fc9840c5f311a",
+            "host": "keybase.io",
+            "key_id": "320FC9840C5F311A",
+            "uid": "b4a9a8559467848d0973299adf3db600",
+            "username": "rchowe"
+        },
+        "merkle_root": {
+            "ctime": 1413870402,
+            "hash": "f3a8d1dcc188ce1a0735cd0d9572c1992724f7086784369a58726a79e80cb6780d5d135ecff88c6406b15f4ec18b7b0e9d27210f4b04a08fcd75b089b6fb3952",
+            "seqno": 82188
+        },
+        "service": {
+            "hostname": "rchowe.com",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1413870466,
+    "expire_in": 157680000,
+    "prev": "04ead614f3f7b768d3a5f697cefa0ff0cc673c82c2a73d13bdb523871afce2c4",
+    "seqno": 7,
+    "tag": "signature"
+}
+
+with the aforementioned key, yielding the PGP signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: GnuPG/MacGPG2 v2.0.22 (Darwin)
+Comment: GPGTools - http://gpgtools.org
+
+owFdUntQFWUU5yXlNcWKR6EOtGQBMrd9P8BIocuEGEKYOoFdd7/99rIXuHu99woy
+DuggOmBqRAVphKOEwSCEU8lDoYdEONhDKR4DDkVJYYggpQ6a9C1jU7Z/fXvO7/zO
+73fOKVno6WZwJ33OFT5kJgLdu8ckt/Wm6YIdmKTJuVjkDgxkqtDm0l82MQtikVgG
+zJVEJzSqWrBNk6HR6gy+h4nAsqHDqWo2hMKNnJHE8iJ0uF6sqDYLdNgdqs6F0TjF
+sFARRAZwEiFIkshKIkEJFIkrQOBpHDAKRRAiokzXnK77umJznGZVRlGEj4vV8bFM
+HMKvRrltcwmJFgWRZxiBZjme5mVc4ChSEERZoWSJxXEd6ISOe5YcIF3LgbraLOjI
+yIRmh6bNWQYuVQcQNEHxHE7jJNIjOtNRiUKJvEzIABA8DyAh4hzFABmXBYYjASEI
+JEfSCofzenuKRUZ5jmRFToA8DiQUxGVGJigGAkVBBCyNsxLBKDREfBIn4VCQEQOB
+K7SE0yLOK0DmGAnnBYlVJEpgSGTACbfaNCySJ5GEPP3Xka0CqMvWZ3afNSPQslCF
+3aG5NKBloni6y2WP1B27cu06LgdK5jmGGgDNkmqT0b7+u1ACQf83DZaNwOB2u+qA
+ZlVHMBzL4+jT+8Bs/QZoKMosQSuUwkkoKVMio7ACB6Ai4oqCA8ByFOBJQIochaYh
+yRJDImpCVAAkAf2vRw7pFC2I0qlabKJrmwMtq9hjqZebu8HNe56HfrFuhvmL/znj
+W80+d0PMnweu8tplSWtOCU+obAtNfdz/XOdwGJl3ZzJlYgirhyUmQ6xHekDqwpFX
+e4pqH3kztbMv0Fr/qfcLdw+bO65FXzqW8NyeIOrrRPaIZ3l91DdJgxV1Z0OKyo6F
+fmUMOT2U9FhA4e3JW4l5FQd3BpmsO7sP5x9p/+39729+WTYw7Hbm/MaLvy/yspQ9
+kBDV0f6H/8Pvjiy7syuibHp9aMOHN6bGq15bmWW7uKxwIl45bd6d5nnho9HjrT3e
+W4ZGcN+f1zVW11wZX1te0yfRzxRv3HR5aeLbQcf5PvLl26OWmMymvleyRzq47rir
+lU/VnGkcuJ52YLSm0LSoK2b+qv6k69bcIYn2n91Q+tPBs7ND8/KCk/18DPFHGyrg
+tXc6q6/0XjgR1Pron1T0IWKvdUXLVZ+oLqvJVyx5gubDa0B1eVcAe6nR3lY13NBL
+FdS6d+57cAW9ucl3f5CpM0aZ+WV3x6mpPa+PZdSWfju+z9qSq6S0vLS850kubLDp
+jaqb0a2VCxoWO7bSybQldCbMEAp8vFrqDs0Uv3fUv2fm1+IodYFnb3/PZ1+cmloT
+OFbrZ3/xr+/AWznLTcmGsoL46cmnwxt/aMqIatZie4pu1PmdyM0vGravGfhxSX7T
+yg2Q3xQXvnnog5HqT7STXQfalzyb1zG4HVtbGtG/ZXa/8WSG6/L51R8zKrbu+dq+
+tom/AQ==
+=hwsh
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/rchowe
+
+==================================================================
