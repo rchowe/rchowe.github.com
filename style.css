@@ -88,6 +88,11 @@ h2
 	margin: 10px 0px;
 }
 
+hr {
+	border: none;
+	border-bottom: #ddd 1px solid;
+}
+
 table.classes
 {
 	line-height: 1.4em;
