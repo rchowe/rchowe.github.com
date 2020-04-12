@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Amex Transfer Bonus History</title>
+        <link rel="stylesheet" href="style.css" />
+        <style>
+            .row {
+                display: flex;
+                height: 35px;
+            }
+
+            .row-header {
+                background: #f7f7f7;
+                border-top: #ddd 1px solid;
+                border-bottom: #ddd 1px solid;
+            }
+            
+            .row:last-child {
+                border-bottom: #ddd 1px solid;
+            }
+
+            .row .month:first-child {
+                border-left: #ddd 1px solid;
+            }
+
+            .month {
+                font-weight: bold;
+                text-align: center;
+                flex-grow: 1;
+                border-right: #ddd 1px solid;
+                height: 35px;
+                line-height: 35px;
+            }
+
+            .timebar {
+                font-size: 85%;
+                font-weight: bold;
+                cursor: default;
+                height: 22px;
+                line-height: 22px;
+                background: black;
+                color: white;
+                text-align: center;
+                position: relative;
+                top: -28px;
+                margin-bottom: -22px;
+                border-radius: 3px;
+
+                user-select: none;
+                -webkit-user-select: none;
+                -ms-user-select: none;
+                -moz-user-select: nonee;
+            }
+
+            .popover {
+                font-size: 85%;
+                position: absolute;
+                background: #ffffee;
+                padding: 3px 10px;
+                border: #eeeedd 1px solid;
+                z-index: 1;
+            }
+
+            .popover .popover-title {
+                font-weight: bold;
+            }
+
+            .popover .popover-notes {
+                border-top: #eeeedd 1px solid;
+                font-style: italic;
+                font-size: 90%;
+                margin: 2px 0px;
+            }
+
+            .popover .popover-transfer-ratio {
+                font-size: 85%;
+                font-style: italic;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="container">
+            <h1>Amex Points Transfer Bonus History</h1>
+
+            <h2>2016</h2>
+            <div class="row row-header">
+                <div class="month">Jan</div>
+                <div class="month">Feb</div>
+                <div class="month">Mar</div>
+                <div class="month">Apr</div>
+                <div class="month">May</div>
+                <div class="month">Jun</div>
+                <div class="month">Jul</div>
+                <div class="month">Aug</div>
+                <div class="month">Sep</div>
+                <div class="month">Oct</div>
+                <div class="month">Nov</div>
+                <div class="month">Dec</div>
+            </div>
+
+            <div class="row">
+                <div class="month"></div>
+                <div class="month"></div>
+                <div class="month"></div>
+                <div class="month"></div>
+                <div class="month"></div>
+                <div class="month"></div>
+                <div class="month"></div>
+                <div class="month"></div>
+                <div class="month"></div>
+                <div class="month"></div>
+                <div class="month"></div>
+                <div class="month"></div>
+            </div>
+
+            <div class="timebar"
+                data-airline="Etihad Airways"
+                data-startDate="1 May 2016"
+                data-endDate="15 Jun 2016"
+                data-bonusPercentage="30"
+                data-normalTransferRatio="1"
+                data-bonusTransferRatio="1.3"
+                data-notes=""
+                style="background: #dbb300; width: calc(100% * 45 / 365); left: calc(100% * (4 / 12));">EY</div>
+            <div class="timebar"
+                data-airline="British Airways"
+                data-startDate="10 Aug 2016"
+                data-endDate="10 Oct 2016"
+                data-bonusPercentage="50"
+                data-normalTransferRatio="0.8"
+                data-bonusTransferRatio="1.2"
+                data-notes="Normal transfer rate changed after promotion."
+                style="background: #123456; width: calc(100% * 60 / 365); left: calc(100% * (7 / 12 + 10 / 365));">BA</div>
+            <div class="timebar"
+                data-airline="Virgin America"
+                data-startDate="10 Feb 2016"
+                data-endDate="10 Mar 2016"
+                data-bonusPercentage="50"
+                data-normalTransferRatio="0.5"
+                data-bonusTransferRatio="0.75"
+                data-notes=""
+                style="background: #d60064; width: calc(100% * 30 / 365); left: calc(100% * (1 / 12 + 10 / 365));">VX</div>
+
+            <div class="row">
+                <div class="month"></div>
+                <div class="month"></div>
+                <div class="month"></div>
+                <div class="month"></div>
+                <div class="month"></div>
+                <div class="month"></div>
+                <div class="month"></div>
+                <div class="month"></div>
+                <div class="month"></div>
+                <div class="month"></div>
+                <div class="month"></div>
+                <div class="month"></div>
+            </div>
+
+            <div class="timebar"
+                data-airline="Virgin Atlantic"
+                data-startDate="1 May 2016"
+                data-endDate="31 May 2016"
+                data-bonusPercentage="30"
+                data-normalTransferRatio="1"
+                data-bonusTransferRatio="1.3"
+                data-notes=""
+                style="background: #d60000; width: calc(100% * 30 / 365); left: calc(100% * (4 / 12));">VS</div>
+            <div class="timebar"
+                data-airline="Hawaiian Airlines"
+                data-startDate="8 Jun 2016"
+                data-endDate="21 Jun 2016"
+                data-bonusPercentage="25"
+                data-normalTransferRatio="1"
+                data-bonusTransferRatio="1.25"
+                data-notes=""
+                style="background: #d600b9; width: calc(100% * 13 / 365); left: calc(100% * (5 / 12 + 8 / 365));">HA</div>
+            <div class="timebar"
+                data-airline="Alitalia"
+                data-startDate="1 Oct 2016"
+                data-endDate="31 Oct 2016"
+                data-bonusPercentage="25"
+                data-normalTransferRatio="1"
+                data-bonusTransferRatio="1.25"
+                data-notes=""
+                style="background: #1e9700; width: calc(100% * 30 / 365); left: calc(100% * (9 / 12));">AZ</div>
+            <div class="timebar"
+                data-airline="Alitalia"
+                data-startDate="24 Nov 2016"
+                data-endDate="31 Dec 2016"
+                data-bonusPercentage="40"
+                data-normalTransferRatio="1"
+                data-bonusTransferRatio="1.4"
+                data-notes=""
+                style="background: #1e9700; width: calc(100% * 37 / 365); left: calc(100% * (10 / 12 + 24 / 365));">AZ</div>
+
+            <div class="row">
+                <div class="month"></div>
+                <div class="month"></div>
+                <div class="month"></div>
+                <div class="month"></div>
+                <div class="month"></div>
+                <div class="month"></div>
+                <div class="month"></div>
+                <div class="month"></div>
+                <div class="month"></div>
+                <div class="month"></div>
+                <div class="month"></div>
+                <div class="month"></div>
+            </div>
+
+            <div class="timebar"
+                data-airline="Etihad Airways"
+                data-startDate="1 Oct 2016"
+                data-endDate="31 Oct 2016"
+                data-bonusPercentage="20"
+                data-normalTransferRatio="1"
+                data-bonusTransferRatio="1.2"
+                data-notes="Bonus not sponsored by Amex."
+                style="background: #dbb300; width: calc(100% * 30 / 365); left: calc(100% * (9 / 12));">EY*</div>
+
+            <div class="row" style="border-bottom: #ddd 1px solid;">
+                <div class="month"></div>
+                <div class="month"></div>
+                <div class="month"></div>
+                <div class="month"></div>
+                <div class="month"></div>
+                <div class="month"></div>
+                <div class="month"></div>
+                <div class="month"></div>
+                <div class="month"></div>
+                <div class="month"></div>
+                <div class="month"></div>
+                <div class="month"></div>
+            </div>
+            <div class="timebar"
+                data-airline="Virgin America"
+                data-startDate="9 Sep 2016"
+                data-endDate="31 Oct 2016"
+                data-bonusPercentage="25"
+                data-normalTransferRatio="0.5"
+                data-bonusTransferRatio="0.625"
+                data-notes="Additional Status Offer"
+                style="background: #d60064; width: calc(100% * 52 / 365); left: calc(100% * (8 / 12 + 9 / 365));">VX</div>
+
+            <h2>2017</h2>
+            <div class="row row-header">
+                <div class="month">Jan</div>
+                <div class="month">Feb</div>
+                <div class="month">Mar</div>
+                <div class="month">Apr</div>
+                <div class="month">May</div>
+                <div class="month">Jun</div>
+                <div class="month">Jul</div>
+                <div class="month">Aug</div>
+                <div class="month">Sep</div>
+                <div class="month">Oct</div>
+                <div class="month">Nov</div>
+                <div class="month">Dec</div>
+            </div>
+
+            <div class="row">
+                <div class="month"></div>
+                <div class="month"></div>
+                <div class="month"></div>
+                <div class="month"></div>
+                <div class="month"></div>
+                <div class="month"></div>
+                <div class="month"></div>
+                <div class="month"></div>
+                <div class="month"></div>
+                <div class="month"></div>
+                <div class="month"></div>
+                <div class="month"></div>
+            </div>
+
+            <div class="timebar"
+                data-airline="Virgin Atlantic"
+                data-startDate="17 Apr 2017"
+                data-endDate="22 May 2017"
+                data-bonusPercentage="30"
+                data-normalTransferRatio="1"
+                data-bonusTransferRatio="1.3"
+                data-notes=""
+                style="background: #d60000; width: calc(100% * 35 / 365); left: calc(100% * (3 / 12 + 17 / 365));">VS</div>
+            <div class="timebar"
+                data-airline="Hawaiian Airlines"
+                data-startDate="7 Jun 2017"
+                data-endDate="21 Jun 2017"
+                data-bonusPercentage="25"
+                data-normalTransferRatio="1"
+                data-bonusTransferRatio="1.25"
+                data-notes=""
+                style="background: #d600b9; width: calc(100% * 13 / 365); left: calc(100% * (5 / 12 + 8 / 365));">HA</div>
+            <div class="timebar"
+                data-airline="British Airways, Iberia"
+                data-startDate="17 Jul 2017"
+                data-endDate="17 Sep 2017"
+                data-bonusPercentage="40"
+                data-normalTransferRatio="1"
+                data-bonusTransferRatio="1.4"
+                data-notes=""
+                style="background: #123456; width: calc(100% * 60 / 365); left: calc(100% * (6 / 12 + 17 / 365));">BA, IB</div>
+            <div class="timebar"
+                data-airline="Virgin Atlantic"
+                data-startDate="10 Oct 2017"
+                data-endDate="30 Nov 2017"
+                data-bonusPercentage="30"
+                data-normalTransferRatio="1"
+                data-bonusTransferRatio="1.3"
+                data-notes=""
+                style="background: #d60000; width: calc(100% * 40 / 365); left: calc(100% * (9 / 12 + 10 / 365));">VS</div>
+
+            <div class="row">
+                <div class="month"></div>
+                <div class="month"></div>
+                <div class="month"></div>
+                <div class="month"></div>
+                <div class="month"></div>
+                <div class="month"></div>
+                <div class="month"></div>
+                <div class="month"></div>
+                <div class="month"></div>
+                <div class="month"></div>
+                <div class="month"></div>
+                <div class="month"></div>
+            </div>
+            <div class="timebar"
+                data-airline="JetBlue"
+                data-startDate="1 May 2017"
+                data-endDate="31 May 2017"
+                data-bonusPercentage="25"
+                data-normalTransferRatio="0.8"
+                data-bonusTransferRatio="1"
+                data-notes=""
+                style="background: #0076d6; width: calc(100% * 30 / 365); left: calc(100% * (4 / 12 + 0 / 365));">B6</div>
+            <div class="timebar"
+                data-airline="JetBlue"
+                data-startDate="1 Nov 2017"
+                data-endDate="30 Nov 2017"
+                data-bonusPercentage="25"
+                data-normalTransferRatio="0.8"
+                data-bonusTransferRatio="1"
+                data-notes=""
+                style="background: #0076d6; width: calc(100% * 30 / 365); left: calc(100% * (10 / 12 + 0 / 365));">B6</div>
+
+            <div class="row">
+                <div class="month"></div>
+                <div class="month"></div>
+                <div class="month"></div>
+                <div class="month"></div>
+                <div class="month"></div>
+                <div class="month"></div>
+                <div class="month"></div>
+                <div class="month"></div>
+                <div class="month"></div>
+                <div class="month"></div>
+                <div class="month"></div>
+                <div class="month"></div>
+            </div>
+            <div class="timebar"
+                data-airline="Air Canada"
+                data-startDate="10 Nov 2017"
+                data-endDate="10 Dec 2017"
+                data-bonusPercentage="20"
+                data-normalTransferRatio="1"
+                data-bonusTransferRatio="1.2"
+                data-notes="Targeted"
+                style="background: #ee5844; width: calc(100% * 30 / 365); left: calc(100% * (10 / 12 + 10 / 365));">AC</div>
+
+            <div class="row" style="border-bottom: #ddd 1px solid;">
+                <div class="month"></div>
+                <div class="month"></div>
+                <div class="month"></div>
+                <div class="month"></div>
+                <div class="month"></div>
+                <div class="month"></div>
+                <div class="month"></div>
+                <div class="month"></div>
+                <div class="month"></div>
+                <div class="month"></div>
+                <div class="month"></div>
+                <div class="month"></div>
+            </div>
+
+            <h2>2018</h2>
+            <div class="row row-header">
+                <div class="month">Jan</div>
+                <div class="month">Feb</div>
+                <div class="month">Mar</div>
+                <div class="month">Apr</div>
+                <div class="month">May</div>
+                <div class="month">Jun</div>
+                <div class="month">Jul</div>
+                <div class="month">Aug</div>
+                <div class="month">Sep</div>
+                <div class="month">Oct</div>
+                <div class="month">Nov</div>
+                <div class="month">Dec</div>
+            </div>
+
+            <div class="row">
+                <div class="month"></div>
+                <div class="month"></div>
+                <div class="month"></div>
+                <div class="month"></div>
+                <div class="month"></div>
+                <div class="month"></div>
+                <div class="month"></div>
+                <div class="month"></div>
+                <div class="month"></div>
+                <div class="month"></div>
+                <div class="month"></div>
+                <div class="month"></div>
+            </div>
+            <div class="timebar"
+                data-airline="Air France - KLM"
+                data-startDate="1 May 2018"
+                data-endDate="15 Jun 2018"
+                data-bonusPercentage="25"
+                data-normalTransferRatio="1"
+                data-bonusTransferRatio="1.25"
+                data-notes=""
+                style="background: #00a1de; width: calc(100% * 45 / 365); left: calc(100% * (4 / 12 + 0 / 365));">AF / KL</div>
+            <div class="timebar"
+                data-airline="Virgin Atlantic"
+                data-startDate="1 Aug 2018"
+                data-endDate="12 Sep 2018"
+                data-bonusPercentage="30"
+                data-normalTransferRatio="1"
+                data-bonusTransferRatio="1.3"
+                data-notes=""
+                style="background: #d60000; width: calc(100% * 42 / 365); left: calc(100% * (7 / 12 + 0 / 365));">VS</div>
+            <div class="timebar"
+                data-airline="British Airways, Aer Lingus, Iberia"
+                data-startDate="15 Sep 2018"
+                data-endDate="15 Nov 2018"
+                data-bonusPercentage="40"
+                data-normalTransferRatio="1"
+                data-bonusTransferRatio="1.4"
+                data-notes=""
+                style="background: #123456; width: calc(100% * 60 / 365); left: calc(100% * (8 / 12 + 15 / 365));">BA, EI, IB</div>
+
+            <div class="row">
+                <div class="month"></div>
+                <div class="month"></div>
+                <div class="month"></div>
+                <div class="month"></div>
+                <div class="month"></div>
+                <div class="month"></div>
+                <div class="month"></div>
+                <div class="month"></div>
+                <div class="month"></div>
+                <div class="month"></div>
+                <div class="month"></div>
+                <div class="month"></div>
+            </div>
+            <div class="timebar"
+                data-airline="Hawaiian Airlines"
+                data-startDate="12 Jun 2018"
+                data-endDate="26 Jun 2018"
+                data-bonusPercentage="25"
+                data-normalTransferRatio="1"
+                data-bonusTransferRatio="1.25"
+                data-notes=""
+                style="background: #d600b9; width: calc(100% * 14 / 365); left: calc(100% * (5 / 12 + 12 / 365));">HA</div>
+            <div class="timebar"
+                data-airline="JetBlue"
+                data-startDate="1 Aug 2018"
+                data-endDate="1 Oct 2018"
+                data-bonusPercentage="25"
+                data-normalTransferRatio="0.8"
+                data-bonusTransferRatio="1.0"
+                data-notes=""
+                style="background: #0076d6; width: calc(100% * 60 / 365); left: calc(100% * (7 / 12 + 0 / 365));">B6</div>
+
+            <div class="row">
+                <div class="month"></div>
+                <div class="month"></div>
+                <div class="month"></div>
+                <div class="month"></div>
+                <div class="month"></div>
+                <div class="month"></div>
+                <div class="month"></div>
+                <div class="month"></div>
+                <div class="month"></div>
+                <div class="month"></div>
+                <div class="month"></div>
+                <div class="month"></div>
+            </div>
+
+            <div class="row" style="border-bottom: #ddd 1px solid;">
+                <div class="month"></div>
+                <div class="month"></div>
+                <div class="month"></div>
+                <div class="month"></div>
+                <div class="month"></div>
+                <div class="month"></div>
+                <div class="month"></div>
+                <div class="month"></div>
+                <div class="month"></div>
+                <div class="month"></div>
+                <div class="month"></div>
+                <div class="month"></div>
+            </div>
+
+            <h2>2019</h2>
+            <div class="row row-header">
+                <div class="month">Jan</div>
+                <div class="month">Feb</div>
+                <div class="month">Mar</div>
+                <div class="month">Apr</div>
+                <div class="month">May</div>
+                <div class="month">Jun</div>
+                <div class="month">Jul</div>
+                <div class="month">Aug</div>
+                <div class="month">Sep</div>
+                <div class="month">Oct</div>
+                <div class="month">Nov</div>
+                <div class="month">Dec</div>
+            </div>
+
+            <div class="row">
+                <div class="month"></div>
+                <div class="month"></div>
+                <div class="month"></div>
+                <div class="month"></div>
+                <div class="month"></div>
+                <div class="month"></div>
+                <div class="month"></div>
+                <div class="month"></div>
+                <div class="month"></div>
+                <div class="month"></div>
+                <div class="month"></div>
+                <div class="month"></div>
+            </div>
+            <div class="timebar"
+                data-airline="Aeromexico"
+                data-startDate="14 Jan 2019"
+                data-endDate="14 Feb 2019"
+                data-bonusPercentage="25"
+                data-normalTransferRatio="1.6"
+                data-bonusTransferRatio="2"
+                data-notes=""
+                style="background: #082a9c; width: calc(100% * 30 / 365); left: calc(100% * (0 / 12 + 14 / 365));">AM</div>
+            <div class="timebar"
+                data-airline="Air France - KLM"
+                data-startDate="18 Mar 2019"
+                data-endDate="29 Apr 2019"
+                data-bonusPercentage="25"
+                data-normalTransferRatio="1"
+                data-bonusTransferRatio="1.25"
+                data-notes=""
+                style="background: #00a1de; width: calc(100% * 42 / 365); left: calc(100% * (2 / 12 + 18 / 365));">AF / KL</div>
+            <div class="timebar"
+                data-airline="Virgin Atlantic"
+                data-startDate="1 May 2019"
+                data-endDate="1 Jul 2019"
+                data-bonusPercentage="30"
+                data-normalTransferRatio="1"
+                data-bonusTransferRatio="1.3"
+                data-notes=""
+                style="background: #d60000; width: calc(100% * 60 / 365); left: calc(100% * (4 / 12 + 0 / 365));">VS</div>
+            <div class="timebar"
+                data-airline="British Airways, Aer Lingus, Iberia"
+                data-startDate="1 Aug 2019"
+                data-endDate="1 Oct 2019"
+                data-bonusPercentage="40"
+                data-normalTransferRatio="1"
+                data-bonusTransferRatio="1.4"
+                data-notes=""
+                style="background: #123456; width: calc(100% * 60 / 365); left: calc(100% * (7 / 12 + 0 / 365));">BA, EI, IB</div>
+            <div class="timebar"
+                data-airline="Air France - KLM"
+                data-startDate="23 Oct 2019"
+                data-endDate="30 Nov 2019"
+                data-bonusPercentage="25"
+                data-normalTransferRatio="1"
+                data-bonusTransferRatio="1.25"
+                data-notes=""
+                style="background: #00a1de; width: calc(100% * 37 / 365); left: calc(100% * (9 / 12 + 23 / 365));">AF / KL</div>
+
+            <div class="row">
+                <div class="month"></div>
+                <div class="month"></div>
+                <div class="month"></div>
+                <div class="month"></div>
+                <div class="month"></div>
+                <div class="month"></div>
+                <div class="month"></div>
+                <div class="month"></div>
+                <div class="month"></div>
+                <div class="month"></div>
+                <div class="month"></div>
+                <div class="month"></div>
+            </div>
+            <div class="timebar"
+                data-airline="JetBlue"
+                data-startDate="5 Jun 2019"
+                data-endDate="Unspecified"
+                data-bonusPercentage="40"
+                data-normalTransferRatio="0.8"
+                data-bonusTransferRatio="1.12"
+                data-notes="T&C imply offer can only be used once."
+                style="background: #0076d6; width: calc(100% * 25 / 365); left: calc(100% * (5 / 12 + 5 / 365));">B6*</div>
+            <div class="timebar"
+                data-airline="JetBlue"
+                data-startDate="23 Oct 2019"
+                data-endDate="21 Dec 2019"
+                data-bonusPercentage="25"
+                data-normalTransferRatio="0.8"
+                data-bonusTransferRatio="1"
+                data-notes=""
+                style="background: #0076d6; width: calc(100% * 58 / 365); left: calc(100% * (9 / 12 + 23 / 365));">B6</div>
+
+            <div class="row">
+                <div class="month"></div>
+                <div class="month"></div>
+                <div class="month"></div>
+                <div class="month"></div>
+                <div class="month"></div>
+                <div class="month"></div>
+                <div class="month"></div>
+                <div class="month"></div>
+                <div class="month"></div>
+                <div class="month"></div>
+                <div class="month"></div>
+                <div class="month"></div>
+            </div>
+            <div class="timebar"
+                data-airline="Qantas"
+                data-startDate="5 Jun 2019"
+                data-endDate="30 Jun 2019"
+                data-bonusPercentage="20"
+                data-normalTransferRatio="1"
+                data-bonusTransferRatio="1.2"
+                data-notes=""
+                style="background: #aa0000; width: calc(100% * 25 / 365); left: calc(100% * (5 / 12 + 5 / 365));">QF</div>
+
+            <div class="row" style="border-bottom: #ddd 1px solid;">
+                <div class="month"></div>
+                <div class="month"></div>
+                <div class="month"></div>
+                <div class="month"></div>
+                <div class="month"></div>
+                <div class="month"></div>
+                <div class="month"></div>
+                <div class="month"></div>
+                <div class="month"></div>
+                <div class="month"></div>
+                <div class="month"></div>
+                <div class="month"></div>
+            </div>
+
+            <h2>2020</h2>
+            <div class="row row-header">
+                <div class="month">Jan</div>
+                <div class="month">Feb</div>
+                <div class="month">Mar</div>
+                <div class="month">Apr</div>
+                <div class="month">May</div>
+                <div class="month">Jun</div>
+                <div class="month">Jul</div>
+                <div class="month">Aug</div>
+                <div class="month">Sep</div>
+                <div class="month">Oct</div>
+                <div class="month">Nov</div>
+                <div class="month">Dec</div>
+            </div>
+
+            <div class="row">
+                <div class="month"></div>
+                <div class="month"></div>
+                <div class="month"></div>
+                <div class="month"></div>
+                <div class="month"></div>
+                <div class="month"></div>
+                <div class="month"></div>
+                <div class="month"></div>
+                <div class="month"></div>
+                <div class="month"></div>
+                <div class="month"></div>
+                <div class="month"></div>
+            </div>
+
+            <div class="row">
+                <div class="month"></div>
+                <div class="month"></div>
+                <div class="month"></div>
+                <div class="month"></div>
+                <div class="month"></div>
+                <div class="month"></div>
+                <div class="month"></div>
+                <div class="month"></div>
+                <div class="month"></div>
+                <div class="month"></div>
+                <div class="month"></div>
+                <div class="month"></div>
+            </div>
+
+            <div class="row">
+                <div class="month"></div>
+                <div class="month"></div>
+                <div class="month"></div>
+                <div class="month"></div>
+                <div class="month"></div>
+                <div class="month"></div>
+                <div class="month"></div>
+                <div class="month"></div>
+                <div class="month"></div>
+                <div class="month"></div>
+                <div class="month"></div>
+                <div class="month"></div>
+            </div>
+
+            <div class="row" style="border-bottom: #ddd 1px solid;">
+                <div class="month"></div>
+                <div class="month"></div>
+                <div class="month"></div>
+                <div class="month"></div>
+                <div class="month"></div>
+                <div class="month"></div>
+                <div class="month"></div>
+                <div class="month"></div>
+                <div class="month"></div>
+                <div class="month"></div>
+                <div class="month"></div>
+                <div class="month"></div>
+            </div>
+
+            <div style="margin-top: 2em; font-size: 90%;">Updated 12 Apr 2020.</div>
+            <div style="font-size: 90%;">Data from <a href="https://www.flyertalk.com/forum/american-express-membership-rewards/1321588-when-next-airline-transfer-bonus-see-wiki-usa-history-13.html">FlyerTalk</a>.</div>
+        </div>
+
+        <script>
+            var generatePopover = function(timebar) {
+                console.log(timebar.dataset);
+
+                var airline = timebar.dataset.airline || "Unknown Airline",
+                    startDate = timebar.dataset.startdate || "Unknown",
+                    endDate = timebar.dataset.enddate || "Unknown",
+                    bonusPercentage = timebar.dataset.bonuspercentage,
+                    normalTransferRatio = parseFloat(timebar.dataset.normaltransferratio) || 0,
+                    bonusTransferRatio = parseFloat(timebar.dataset.bonustransferratio) || 0;
+                    notes = timebar.dataset.notes || "";
+                
+                var div = document.createElement("div");
+                div.className = "popover";
+                div.innerHTML =
+                    "<div class='popover-title'>" + airline + "</div>"
+                    + "<div class='popover-dates'>" + startDate + " &ndash; " + endDate + "</div>";
+                if (bonusPercentage)
+                    div.innerHTML += "<div class='popover-bonus'>" + 
+                        "<div class='popover-bonus-percentage'>" + bonusPercentage + "% bonus"
+                        + (normalTransferRatio && bonusTransferRatio ? " <span class='popover-transfer-ratio'>(1000 MR &rarr; " + (bonusTransferRatio * 1000) + " miles)</div>" : "") + "</div>";
+                if (notes)
+                    div.innerHTML += "<div class='popover-notes'>" + notes + "</div>"
+                div.style.top = (timebar.offsetTop + 25) + "px";
+                div.style.left = timebar.offsetLeft + "px";
+
+                return div;
+            }
+
+            /* When the page loads, add dynamic content. */
+            document.addEventListener("DOMContentLoaded", function () {
+                var timebars = document.getElementsByClassName("timebar");
+                for (var i = 0; i < timebars.length; i++) {
+                    (function (timebar) {
+                        timebar.onmouseenter = function () {
+                            if (!timebar.popover) {
+                                var popover = generatePopover(timebar)
+                                timebar.parentNode.insertBefore(
+                                    popover,
+                                    timebar.nextSibling);
+                                timebar.popover = popover;
+                            }
+                        };
+
+                        timebar.onmouseleave = function () {
+                            var popover = timebar.popover;
+                            if (popover) {
+                                popover.parentNode.removeChild(popover);
+                                timebar.popover = null;
+                            }
+                        }
+                    })(timebars[i]);
+                }
+            }, false);
+        </script>
+    </body>
+</html>
